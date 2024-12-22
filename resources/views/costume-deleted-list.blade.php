@@ -21,7 +21,7 @@
         <thead>
             <tr>
                 <th>No.</th>
-                <th>Kode</th>
+                <th>Kodepul</th>
                 <th>Title</th>
                 <th>Action</th>
             </tr>
