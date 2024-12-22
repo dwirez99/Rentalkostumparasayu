@@ -1,7 +1,7 @@
 @extends('layouts.mainlayout')
 
 @section('title', 'Deleted Costume')
-    
+
 @section('content')
 <h1>Deleted Costume</h1>
 <div class="mt-5">
@@ -21,7 +21,7 @@
         <thead>
             <tr>
                 <th>No.</th>
-                <th>Code</th>
+                <th>Kode</th>
                 <th>Title</th>
                 <th>Action</th>
             </tr>
@@ -30,7 +30,7 @@
             @foreach ($deletedCostume as $item)
                 <tr>
                     <td class="align-middle">{{ $loop->iteration }}</td>
-                    <td class="align-middle">{{ $item->cosplay_code }}</td>
+                    <td class="align-middle">{{ $item->kostum_id }}</td>
                     <td class="align-middle">{{ $item->title }}</td>
                     <td class="align-middle">
                         <a href="/costume-restore/{{ $item->slug }}" class="btn btn-primary">Restore</a>

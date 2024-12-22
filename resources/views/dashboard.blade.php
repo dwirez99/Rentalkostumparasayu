@@ -4,7 +4,7 @@
 
 @section('content')
 
-<h1>Welcome, {{ Auth::user()->username }}</h1>
+<h1>Selamat Datang, {{ Auth::user()->username }}</h1>
 
 <div class="row mt-5">
     <div class="col-lg-4">
@@ -45,5 +45,37 @@
 <div class="mt-5">
     <h2>Riwayat Sewa</h2>
     <x-rent-log-table :rentlog='$rent_logs' />
+</div>
+
+<div class="mt-5">
+    <h2>Chart Penyewaan Bulanan</h2>
+    <canvas id="myChart" width="400" height="200"></canvas>
+    <script>
+        // Data chart (bisa diganti dengan data dari controller)
+        const labels = @json($chartData['labels']);
+        const data = @json($chartData['data']);
+
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar', // Jenis chart (bar, line, dll.)
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Jumlah Penyewaan Bulanan',
+                    data: data,
+                    backgroundColor: 'rgb(135, 177, 255)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
 </div>
 @endsection

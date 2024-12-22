@@ -1,13 +1,13 @@
 @extends('layouts.mainlayout')
 
 @section('title', 'Categories')
-    
+
 @section('content')
 <h1>Category List</h1>
 
 <div class="mt-5">
-    <a href="category-add" class="btn btn-primary me-3">Add Category</a>
-    <a href="category-deleted" class="btn btn-secondary">View Deleted Data</a>
+    <a href="category-add" class="btn btn-primary me-3">Tambah Kategori</a>
+    <a href="category-deleted" class="btn btn-secondary">Lihat Kategoti terhapus</a>
 </div>
 <div class="mt-5">
 @if (session('status'))
@@ -24,7 +24,7 @@
         <thead>
             <tr>
                 <th>No.</th>
-                <th>Name</th>
+                <th>Nama</th>
                 <th>Action</th>
             </tr>
         </thead>

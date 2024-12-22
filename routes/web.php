@@ -9,6 +9,7 @@ use App\Http\Controllers\RentLogController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\CostumeRentController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -70,6 +71,9 @@ Route::middleware('only_admin')->group(function() {
     Route::get('rent-return', [CostumeRentController::class, 'returnCostume']);
     Route::post('rent-return', [CostumeRentController::class, 'saveRentCostume']);
     Route::get('rentlogs', [RentLogController::class, 'index']);
+
+    Route::get('chart', [DashboardController::class, 'index']);
+
 
 
 });

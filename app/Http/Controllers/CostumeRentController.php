@@ -53,6 +53,13 @@ else {
     try {
                 DB::beginTransaction();
                 //proses tambah ke rentlog
+
+                // Ambil harga untuk 3 hari dari tabel Kostum
+                $kostum = Kostum::findOrFail($request->kostum_id);
+                $harga = $kostum->harga;
+
+                $request['total_harga'] = $harga;
+                
                 RentLogs::create($request->all());
                 //proses update status kostum
                 $Kostum = Kostum::findOrFail($request->kostum_id);

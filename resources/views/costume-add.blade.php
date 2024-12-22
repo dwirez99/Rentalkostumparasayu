@@ -4,10 +4,10 @@
 
 @section('content')
 <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
-<h1>Add New Costume</h1>
+<h1>Tambah Kostum Baru</h1>
 
 <div class="mt-5">
-    <a href="/menu-costume" class="btn btn-primary">Back</a>
+    <a href="/menu-costume" class="btn btn-primary">Kembali</a>
 </div>
 <div>
     <form action="costume-add" method="post" enctype="multipart/form-data">
@@ -36,6 +36,10 @@
         <div class="mb-3">
             <label for="image" class="form-label">Image</label>
             <input type="file" name="image" class="form-control">
+        </div>
+        <div class="mb-3">
+            <label for="harga" class="form-label">Harga</label>
+            <input type="number" name="harga" id="harga" class="form-control" placeholder="Masukkan Harga" value="{{ old('harga') }}" step="0.01" min="0">
         </div>
         <div class="mb-3">
             <label for="category" class="form-label">Cetegory</label>

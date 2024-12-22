@@ -46,7 +46,11 @@
             @endif
         </div>
         <div class="mb-3">
-            <label for="category" class="form-label">Cetegory</label>
+            <label for="harga" class="form-label">Harga</label>
+            <input type="number" name="harga" id="harga" class="form-control" placeholder="Masukkan Harga" value="{{$Kostum->harga}}" step="0.01" min="0">
+        </div>
+        <div class="mb-3">
+            <label for="category" class="form-label">Kategori</label>
             <select name="categories[]" id="category" class="form-control select-multiple" multiple>
                 @foreach ($categories as $item)
                 <option value="{{ $item->id }}">{{ $item->name }}</option>

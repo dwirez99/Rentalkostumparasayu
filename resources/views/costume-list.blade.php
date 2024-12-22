@@ -33,6 +33,7 @@
                 <img src="{{ $item->cover != null ? asset('storage/cover/'.$item->cover) : asset('images/img-not-found.png') }}" class="card-img-top" draggable="false" alt="Gambar Costume" class="card-img-top">
                 <div class="card-body">
                   <h5 class="card-title">{{ $item->title }}</h5>
+                  <p class="card-text">Harga : Rp {{ number_format($item->harga, 0, ',', '.') }}</p>
                   <p class="card-text">Category : @foreach ($item->categories as $category)
                     {{ $category->name }},
                 @endforeach</p>

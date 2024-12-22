@@ -25,6 +25,7 @@
                 <th>No.</th>
                 <th>Kode Kostum</th>
                 <th>Judul</th>
+                <th>Harga</th>
                 <th>Category</th>
                 <th>Status</th>
                 <th>Action</th>
@@ -36,6 +37,7 @@
                     <td class="align-middle">{{ $loop->iteration }}</td>
                     <td class="align-middle">{{ $item->kostum_id }}</td>
                     <td class="align-middle">{{ $item->title }}</td>
+                    <td class="align-middle">{{ $item->harga }}</td>
                     <td>@foreach ($item->categories as $category)
                         {{ $category->name }} <br>
                     @endforeach</td>

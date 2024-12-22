@@ -15,7 +15,7 @@ class Kostum extends Model
     use Sluggable;
     use SoftDeletes;
     protected $fillable = [
-        'kostum_id', 'title', 'cover', 'slug'
+        'kostum_id', 'title', 'cover', 'slug','harga'
     ];
     public function sluggable(): array
     {

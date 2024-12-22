@@ -1,7 +1,7 @@
 @extends('layouts.mainlayout')
 
 @section('title', 'Deleted Category')
-    
+
 @section('content')
 <h1>Deleted Category</h1>
 <div class="mt-5">
@@ -21,7 +21,7 @@
         <thead>
             <tr>
                 <th>No.</th>
-                <th>Name</th>
+                <th>Nama</th>
                 <th>Action</th>
             </tr>
         </thead>
