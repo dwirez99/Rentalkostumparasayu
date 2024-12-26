@@ -1,5 +1,8 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
+# Manual Book
+https://docs.google.com/document/d/1b5RJADLPLRwYk2GMbJilRrNP9j9SuGg-Ny7iA9ZIg7A/edit?usp=sharing
+
 # Analisa Sistem
 1. Ada 2 role user yaitu admin dan client
 2. Costume bisa memiliki banyak category
@@ -15,3 +18,6 @@
 12. Jika costume sedang dipinjam maka stock menjadi kosong, jika sudah dikembalikan maka stock akan menjadi available kembali
 13. Admin bisa melihat client yang terkena denda lalu melihat detail peminjamannya
 14. Admin bisa melihat log peminjaman costume
+
+# Credit Refrensi
+Channel Youtube Cara Fajar : https://youtu.be/-OBUjWl4QPY?si=VPfZspVQshFbKO3V
